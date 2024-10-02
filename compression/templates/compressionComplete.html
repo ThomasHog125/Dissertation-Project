@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'css/homepage.css' %}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap"
+    rel="stylesheet"
+  />
+  <script src="{% static 'javascript/stats.js' %}" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <title>Document</title>
+
+  <body
+    onload="newChart({{ sizes.0 }},{{ sizes.1 }},{{ sizes.2 }},{{ sizes.3 }},{{ sizes.4 }})"
+  >
+    <div class="bar">
+      <div class="TextStyle" onclick="relocate()">
+        Burrows-Wheeler Transform
+      </div>
+    </div>
+    <div class="holder">
+      <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+    </div>
+    <div class="holder">
+      <div class="downloadHolder">
+        <form action="{% url 'download' %}" method="get">
+          <button type="submit">Download File</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

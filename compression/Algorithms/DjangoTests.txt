@@ -1,0 +1,17 @@
+HomePage
+Test 1 - Load homepage - Sucess
+Test 2 - Load Homepage with form - Sucess
+Test 3 - Allows User Input - Sucess 
+Test 4 - Saves file to device - Sucess
+Test 5 - Only accepts .txt file - Sucess
+Test 6 - Applies compression algorithms to file - Sucess
+Test 7 - saves output of compression to .dat files - sucess
+test 8 - Sends user to new page with name of file in url - sucess
+Sucess Page
+Test 1 - loads page - sucess
+Test 2 - download link starts file download - Sucess
+Test 3 - Bar chart on screen - sucess 
+Test 4 - gathers file sizes for stats - sucess
+Test 5 - sends file sizes to webpage - sucess
+Test 6 - file sizes shown on bar chart - sucess
+Test 7 - click on home button to go back to home page - sucess

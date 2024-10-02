@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Catamaran", sans-serif;
+  background-color: rgb(40, 103, 119);
+}
+
+.bar {
+  text-align: center;
+  font-family: "Catamaran", sans-serif;
+  padding: 20px;
+  font-size: 150%;
+  color: rgb(66, 66, 66);
+  background-color: rgba(206, 165, 91, 1);
+}
+.divcontainer {
+  width: 100%;
+}
+.RightContainer {
+  margin-top: 10%;
+  float: right;
+  width: 50%;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LeftContainer {
+  padding: 5%;
+  margin-top: 5%;
+  width: 40%;
+  float: left;
+  font-size: 150%;
+  text-align: center;
+}
+button {
+  border-radius: 100px;
+  border: solid;
+  border-color: rgb(66, 66, 66);
+  padding: 2%;
+  width: 100%;
+  color: rgb(66, 66, 66);
+  background-color: rgba(206, 165, 91, 1);
+}
+
+button:click {
+  background-color: white;
+}
+canvas {
+  background-color: white;
+  color: black;
+}
+.downloadHolder {
+  width: 40%;
+}
+.holder {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.TextStyle {
+  font-family: "Catamaran", sans-serif;
+}
+
+.TextStyle:hover {
+  cursor: pointer;
+}

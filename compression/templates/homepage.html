@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'css/homepage.css' %}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap"
+    rel="stylesheet"
+  />
+  <title>Document</title>
+  <body>
+    <div class="bar">Burrows-Wheeler Transform</div>
+    <div class="divcontainer">
+      <div class="LeftContainer">
+        The Burrows-Wheeler Transform is a tool used in compression that aims to
+        group together characters that are the same. This program will compress
+        a text file. It will show the difference between using the
+        Burrows-Wheeler Transform with the Lyndon Factorisation and without. It
+        will allso show how individual compression tools effect how effective
+        the compression can be.
+      </div>
+      <div class="RightContainer">
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %} {{form}}
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
